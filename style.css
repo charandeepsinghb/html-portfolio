@@ -29,6 +29,7 @@ body {
 .side {
     margin: 7% 0;
     min-width: 4rem;
+    user-select: none;
 }
 
 .side > div {
@@ -65,9 +66,9 @@ body {
 }
 
 
-@media only screen and (max-aspect-ratio: 0.6/1) {
+@media only screen and (max-aspect-ratio: 0.8/1) {
     .main {
-        margin: 8rem 0rem;
+        margin: 8rem auto;
     }
     
     .side {
@@ -84,6 +85,7 @@ body {
 
     .name {
         font-size: 2rem;
+        text-align: left;
     }
     .intro {
         font-size: 1rem;
