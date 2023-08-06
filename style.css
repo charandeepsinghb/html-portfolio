@@ -1,13 +1,16 @@
 body {
     margin: 0;
 }
+:root {
+    --use-br: 1rem;
+}
 
 .main {
-    margin: 0.5rem;
+    margin: 8rem 0.5rem;
 }
 
 .meandintrowrapper {
-    margin: 8rem 4rem;
+    margin: 0 4rem;
     display: flex;
     justify-content: center;
 }
@@ -42,7 +45,7 @@ body {
     padding: 1rem 0.4rem;
     font-size: 2rem;
     transition: padding-left 0.3s;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 var(--use-br) var(--use-br) 0;
     margin: 0 0 5rem;
     display: flex;
     align-items: baseline;
@@ -72,21 +75,18 @@ body {
 
 .metricSec {
     margin: 4rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     border: 1px solid #818181;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: var(--use-br);
+    padding: 2rem;
 }
 
 @media only screen and (max-aspect-ratio: 0.8/1) {
     .main {
-        margin: 0.5rem;
+        margin: 4rem 0rem;
     }
     .meandintrowrapper {
-        margin: 8rem 1rem;
-    }
-    .side {
-        margin: 8rem 0;
+        margin: 0 1rem;
     }
     .intro > div {
         margin: 2rem 0;
@@ -108,6 +108,7 @@ body {
     }
     .side {
         min-width: 3rem;
+        margin: 4rem 0;
     }
 
     .side .sqlimg {
@@ -116,5 +117,6 @@ body {
 
     .metricSec {
         margin: 0.5rem;
+        padding: 0.5rem;
     }
 }
