@@ -150,5 +150,18 @@ body {
         margin: 0.5rem;
         padding: 0.5rem;
         font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+    .metricSec .head {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .pad1 {
+        padding: 0.5rem;
+    }
+    #htmlpat {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
     }
 }
