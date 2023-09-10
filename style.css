@@ -83,55 +83,36 @@ body {
     /* font-size: 2rem; */
     border: 1px solid #818181;
     border-radius: var(--use-br);
-    padding: 2rem;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
+.pad1 {
+    padding: 1rem;
+}
+.metricSec .head {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 
-iframe {
-    /* border: 1px solid black; */
+#htmlpat {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+}
+#htmlpat .smallbox {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    transition: transform 500ms;
 }
-
-.respfonts {
-    font-size: 1rem;
+.hoverRotateLeft:hover {
+    transform: rotate(-90deg);
 }
-/* Transisions section */
-.csstransitions {
-    /* border: 1px solid #818181;
-    border-radius: var(--use-br); */
-    height: 9rem;
+.hoverRotateRight:hover {
+    transform: rotate(90deg);
 }
-.csstransitions button {
-    user-select: none;
-    margin: 1rem;
-    background-color: darkorange;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    box-shadow: inset -2px -3px 4px 0px #b26200;
-    transition-duration: 250ms, 250ms, 250ms;
-    transition-timing-function: ease, ease, ease;
-    transition-delay: 0s;
-    transition-property: scale, color, box-shadow;
-}
-.csstransitions button:hover {
-    scale: 1.1;
-    cursor: pointer;
-}
-.csstransitions button:active {
-    scale: 0.9 0.2;
-    color: gray;
-    box-shadow: inset -2px 1px 4px 0px #b26200;
-}
-
 
 @media only screen and (max-aspect-ratio: 0.8/1) {
-    .respfonts {
-        font-size: 0.7rem;
-    }
-    
     .main {
         margin: 4rem 0rem;
     }
