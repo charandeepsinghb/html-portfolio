@@ -111,6 +111,32 @@ body {
 .hoverRotateRight:hover {
     transform: rotate(90deg);
 }
+.rotateAni {
+    animation: rotateboxes 10s infinite;
+}
+
+canvas {
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+
+@keyframes rotateboxes {
+    0%, 45% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    55%, 100% {
+        transform: rotate(0deg);
+    }
+}
+
+.javascript .details {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media only screen and (max-aspect-ratio: 0.8/1) {
     .main {
