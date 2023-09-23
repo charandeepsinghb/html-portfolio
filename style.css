@@ -115,7 +115,7 @@ body {
     animation: rotateboxes 10s infinite;
 }
 
-canvas {
+#can {
     border: 1px solid black;
     border-left: 0;
     border-right: 0;
@@ -136,6 +136,11 @@ canvas {
 .javascript .details {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+canvas {
+    width: 48%;
 }
 
 @media only screen and (max-aspect-ratio: 0.8/1) {
@@ -189,5 +194,9 @@ canvas {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
+    }
+
+    canvas {
+        width: 100%;
     }
 }

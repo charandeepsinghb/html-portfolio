@@ -69,16 +69,16 @@ generateHtmlPattern('htmlpat');
 
 function drawBounce() {
 
-    var canvas = document.getElementById("can");
-    var ctx = canvas.getContext("2d");
-    var ballRadius = 10;
-    var x = canvas.width / 2;
-    var y = canvas.height - 30;
-    var dx = 2;
-    var dy = -1;
-    var paddleHeight = 10;
-    var paddleWidth = 75;
-    var paddleX = (canvas.width - paddleWidth) / 2;
+    const canvas = document.getElementById("can");
+    const ctx = canvas.getContext("2d");
+    let ballRadius = 10;
+    let x = canvas.width / 2;
+    let y = canvas.height - 30;
+    let dx = 2;
+    let dy = -1;
+    const paddleHeight = 10;
+    const paddleWidth = 75;
+    let paddleX = (canvas.width - paddleWidth) / 2;
 
 
     function drawBall() {
@@ -114,15 +114,17 @@ function drawBounce() {
         if (x + 5 + dx > canvas.width - ballRadius || x - 5 + dx < ballRadius) {
             dx = -dx;
         }
-        if (y + dy > canvas.height - ballRadius || y - 5 + dy < ballRadius) {
+        if (y - 2 + dy > canvas.height - ballRadius || y + 2 + dy < ballRadius) {
             dy = -dy;
         }
 
         x += dx;
-        y += dy;
+        y += dy + (Math.random() * 0.5) - 0.25;
+
+        requestAnimationFrame(draw);
     }
 
-    setInterval(draw, 10);
+    draw();
 }
 
 drawBounce();
