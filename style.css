@@ -5,6 +5,10 @@
     --font-size-ul-mobile: 1rem;
     --max-width-main: 800px;
     --max-width-main-mobile: 300px;
+
+    --font-color: black;
+    --background-color: white;
+    --link-color: green;
 }
 
 body {
@@ -13,8 +17,13 @@ body {
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-}
 
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+a {
+    color: var(--link-color);
+}
 .intro > ul {
     font-size: var(--font-size-ul);
 }
@@ -60,6 +69,7 @@ nav {
 .navContextIcon {
     margin: 0.5rem;
     padding: 0.5rem;
+    border-radius: 5px;
 }
 .navContextIcon:active {
     background-color: #acacac;
