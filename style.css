@@ -3,6 +3,8 @@
     --font-size-name-mobile: 1.5rem;
     --font-size-ul: 2rem;
     --font-size-ul-mobile: 1rem;
+    --max-width-main: 800px;
+    --max-width-main-mobile: 300px;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 }
 main {
     margin: auto;
-    max-width: 800px;
+    max-width: var(--max-width-main);
 }
 
 .name {
@@ -37,29 +39,39 @@ main {
     display: block;
 }
 .sect {
-    margin-top: 5rem;
-}
-aside {
-    float: right;
+    padding-top: 3rem;
+    margin-top: 2rem;
 }
 nav {
-    max-width: 800px;
+    max-width: var(--max-width-main);
     margin: auto;
+    display: flex;
 }
 .contacts img {
     width: 1rem;
+}
+.contacts {
+    margin-top: 2rem;
 }
 #githubIcon {
     width: 1.4rem;
     margin-left: -0.2rem;
 }
-nav a {
-    text-decoration: none;
+.navContextIcon {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.navContextIcon:active {
+    background-color: #acacac;
+}
+.navContext {
+    width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .name {
         font-size: var(--font-size-name-mobile);
+        margin-top: 1.5rem;
     }
     .name span {
         display: block;
@@ -71,11 +83,30 @@ nav a {
         margin-top: 2rem;
     }
     main {
-        max-width: 300px;
+        max-width: var(--max-width-main-mobile);
     }
     
     nav {
-        max-width: 300px;
+        max-width: var(--max-width-main-mobile);
         margin: auto;
+        justify-content: end;
+    }
+    .navContext {
+        display: none;
+    }
+    .navContext > li {
+        margin-bottom: 1rem;
+    }
+    .navContext > li:last-child {
+        margin-bottom: 0;
+    }
+    .navContextIcon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    main, nav {
+        margin: 0 2rem;
     }
 }
