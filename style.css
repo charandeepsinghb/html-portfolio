@@ -1,6 +1,6 @@
 :root {
-    --font-size-name: 5rem;
-    --font-size-name-mobile: 2rem;
+    --font-size-name: 4rem;
+    --font-size-name-mobile: 1.5rem;
     --font-size-ul: 2rem;
     --font-size-ul-mobile: 1rem;
 }
@@ -8,33 +8,74 @@
 body {
     margin: 0;
     padding: 0;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .intro > ul {
-    list-style-type: none;
-    line-height: 5rem;
-    padding-inline-start: 0;
     font-size: var(--font-size-ul);
 }
 
+.intro > ul > li {
+    margin-top: 3rem;
+}
+
+.noStyleList {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
 main {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    max-width: 800px;
 }
 
 .name {
     font-size: var(--font-size-name);
+}
+.name span {
+    display: block;
+}
+.sect {
     margin-top: 5rem;
+}
+aside {
+    float: right;
+}
+nav {
+    max-width: 800px;
+    margin: auto;
+}
+.contacts img {
+    width: 1rem;
+}
+#githubIcon {
+    width: 1.4rem;
+    margin-left: -0.2rem;
+}
+nav a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
     .name {
         font-size: var(--font-size-name-mobile);
-        margin-top: 4rem;
-        
+    }
+    .name span {
+        display: block;
     }
     .intro > ul {
         font-size: var(--font-size-ul-mobile);
-        line-height: 3rem;
+    }
+    .intro > ul > li {
+        margin-top: 2rem;
+    }
+    main {
+        max-width: 300px;
+    }
+    
+    nav {
+        max-width: 300px;
+        margin: auto;
     }
 }
