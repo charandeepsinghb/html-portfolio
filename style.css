@@ -4,7 +4,7 @@
     --font-size-ul: 2rem;
     --font-size-ul-mobile: 1rem;
     --max-width-main: 800px;
-    --max-width-main-mobile: 300px;
+    --max-width-main-mobile: 320px;
 
     --font-color: black;
     --background-color: white;
@@ -103,6 +103,7 @@ nav {
     }
     .navContext {
         display: none;
+        margin-top: 1rem;
     }
     .navContext > li {
         margin-bottom: 1rem;
@@ -115,7 +116,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
     main, nav {
         margin: 0 2rem;
     }
