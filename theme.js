@@ -14,10 +14,8 @@ function darkMode(isOn) {
 // Theme change event listener
 darkThemeMq.addEventListener("change", e => {
     if (e.matches) {
-        darkCheck.checked = true;
         darkMode(true);
     } else {
-        darkCheck.checked = false;
         darkMode(false);
     }
 });
