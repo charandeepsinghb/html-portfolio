@@ -103,7 +103,7 @@ nav {
     }
     .navContext {
         display: none;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
     .navContext > li {
         margin-bottom: 1rem;
