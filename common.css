@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+}
+.flex-just-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cmr5 > * {
+    margin-right: 5rem;
+}
+.cmb05 > * {
+    margin-bottom: 0.5rem;
+}
+.alignMatIcon {
+    font-size: 1rem;
+    vertical-align: sub;
+}
