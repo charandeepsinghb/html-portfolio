@@ -3,6 +3,8 @@
     --font-size-name-mobile: 1.5rem;
     --font-size-ul: 2rem;
     --font-size-ul-mobile: 1rem;
+    --max-width-main: 800px;
+    --max-width-main-mobile: 300px;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 }
 main {
     margin: auto;
-    max-width: 800px;
+    max-width: var(--max-width-main);
 }
 
 .name {
@@ -39,11 +41,8 @@ main {
 .sect {
     margin-top: 5rem;
 }
-aside {
-    float: right;
-}
 nav {
-    max-width: 800px;
+    max-width: var(--max-width-main);
     margin: auto;
 }
 .contacts img {
@@ -60,6 +59,7 @@ nav a {
 @media only screen and (max-width: 768px) {
     .name {
         font-size: var(--font-size-name-mobile);
+        margin-top: 2rem;
     }
     .name span {
         display: block;
@@ -71,11 +71,17 @@ nav a {
         margin-top: 2rem;
     }
     main {
-        max-width: 300px;
+        max-width: var(--max-width-main-mobile);
     }
     
     nav {
-        max-width: 300px;
+        max-width: var(--max-width-main-mobile);
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    main, nav {
+        margin: 0 2rem;
     }
 }
