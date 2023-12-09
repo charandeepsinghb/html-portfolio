@@ -11,14 +11,17 @@
 </head>
 <body>
     <header>
-        <nav >
-            <ul class="noStyleList flex-just-between">
-                <li><a>Charandeep Singh</a></li>
+        <nav>
+            <ul id="navContext" class="navContext noStyleList flex-just-between">
+                <li><a href="">Charandeep Singh</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
             </ul>
+            <div>
+                <div class="hidden navContextIcon" onclick="showNav();">⋮</div>
+            </div>
         </nav>
     </header>
     <main>
@@ -31,7 +34,7 @@
             </ul>
         </div>
 
-        <div id="contact" class="contacts">
+        <div id="contacts" class="contacts">
             <ul class="noStyleList cmb05">
                 <li>
                     <span class="alignMatIcon material-symbols-outlined">mail</span>
@@ -44,7 +47,8 @@
                     <a target="_blank" href="https://linkedin.com/in/charandeep-singh-b34253164">linkedin.com/in/charandeep-singh-b34253164</a></li>
                 <li>
                     <span class="alignMatIcon material-symbols-outlined">call</span>
-                    +91 75080 43520</li>
+                    <a href="tel:+917508043520">+91 75080 43520</a>
+                </li>
             </ul>
         </div>
 
@@ -53,8 +57,8 @@
             <ul class="noStyleList">
                 <li>
                     <h3>ClayHR — Human Resource Management Software</h3>
+                    <div>OCT 2021 - Present</div>
                     <p>
-                        <div>OCT 2021 - Present</div>
                         The project is an HCM software developed using Spring MVC, Servlet, JSP, TypeScript, Angular, Node.js, JavaScript, and Maven. 
                         Deployment occurs via Jenkins on AWS servers sourced from the Bitbucket code base. 
                         The system emphasizes customization, featuring multiple modules within its architecture. 
@@ -63,7 +67,6 @@
                         Slack Integrations, and Tango Gift Card Integration.
                         Additionally, I deepened my understanding of programming paradigms and the project's architecture.
                     </p>
-                    <img src="" alt="">
                 </li>
             </ul>
         </div>
@@ -78,7 +81,6 @@
                         I participated in Hacktoberfest by contributing to many repositories and maintaining multiple contributions that were made to this project by many people. 
                         It uses custom manual routing (concept from angular). Through this endeavor, I acquired the skills needed to maintain a scalable, open-source codebase that encourages contributions from others.
                     </p>
-                    <img src="" alt="">
                 </li>
                 <li>
                     <h3>Bani Reader (Code) — Bani Reading Web App</h3>
@@ -86,7 +88,6 @@
                         I needed a web app where Bani could be read without scrolling, akin to an e-reader. I added several features and options for reading Bani and look forward to expanding it further.
                         I try to learn the latest technologies and trends and contribute to other open-source projects.
                     </p>
-                    <img src="" alt="">
                 </li>
             </ul>
         </div>
