@@ -93,12 +93,15 @@ nav {
         margin-top: 2rem;
     }
     main {
-        max-width: var(--max-width-main-mobile);
+        /* max-width: var(--max-width-main-mobile); */
+        margin: 0 2rem;
+
     }
     
     nav {
-        max-width: var(--max-width-main-mobile);
         margin: auto;
+        margin: 0 2rem;
+        /* max-width: var(--max-width-main-mobile); */
         justify-content: end;
     }
     .navContext {
